@@ -1,0 +1,258 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --fonteTitulo: 'Press Start 2P', sans-serif;
+    --fonteTexto: 'IBM Plex Mono', sans-serif;
+    --cor0: rgb(250, 147, 233);
+    --cor1: #e981ad; /* Vermelho */
+    --cor2: #e0a7e0; /* Bege */
+    --cor3: #FCF0EB; /* Rosa */
+    --cor4: #000000; /* Preto */
+    --cor5: #fae6ff; /* Branco */
+}
+
+body {
+    background-color: var(--cor5);
+}
+
+.header,
+.footer-logo {
+    background-color: var(--cor1);
+    font-family: var(--fonteTitulo);
+    font-size: 1.5rem;
+    color: var(--cor3);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 30px 50px 30px ;
+    padding: 60px 40px 60px 40px;
+    gap: 70px;
+    max-width: 100%;
+}
+
+.contenido-items {
+    padding: 40px;
+    box-shadow: -10px 10px 10px 10px var(--cor2);
+}
+
+.contenido-crear {
+    padding: 40px;
+}
+
+.contenido-titulo {
+    font-family: var(--fonteTitulo);
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.contenido-items-todos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: 50vh;
+    flex-grow: 1;
+    padding: 40px 0 0 0 ;
+}
+
+.contenido-items-items {
+    font-family: var(--fonteTexto);
+    background-color: var(--cor1);
+    color: var(--cor4);
+    margin: 0 10px 40px 0;
+    width: 196px;
+    height: 269px;
+    max-width: 100%;
+    border: 3px solid var(--cor0);
+    border-radius: 10px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.contenido-items-imagen {
+    margin: 10px;
+    width: 176px;
+    height: 174px;
+    border-radius: 5px;
+    border: 3px solid var(--cor0);
+}
+
+.contenido-items-titulo {
+    font-size: 0.9rem;
+    margin: 0 10px 10px 10px;
+    font-weight: 400;
+}
+
+.contenido-items-valor-eliminar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 10px 10px;
+}
+
+.contenido-items-valor {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.formulario-campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-crear-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.campo-escrita {
+    border: 3px solid var(--cor2);
+    border-radius: 40px;
+    width: 392px;
+    height: 58px;
+    color: var(--cor1);
+    padding: 15px;
+    font-family: var(--fonteTexto);
+}
+
+.campo-escrita:focus {
+    border: 7px solid var(--cor1);
+}
+
+.formulario-boton {
+    gap: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario-boton-enviar,
+.formulario-boton-cancelar {
+    border: 3px solid var(--cor2);
+    border-radius: 10px;
+    width: 188px;
+    height: 55px;
+    font-family: var(--fonteTexto);
+}
+
+.formulario-boton-enviar {
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+.formulario-boton-enviar{
+background-color: var(--cor2);
+}
+
+.formulario-boton-cancelar {
+color: var(--cor2);
+}
+
+.formulario-boton-cancelar
+{
+background-color: var(--cor3);
+color: var(--cor1);
+}
+
+.mensaje-error {
+font-size: 1rem;
+color: red;
+text-align: center;
+}
+
+.footer {
+background-color: var(--cor1);
+padding: 20px;
+text-align: center;
+color: var(--cor3);
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.footer-texto {
+font-family: var(--fonteTexto);
+font-size: 1rem;
+font-weight: 400;
+}
+
+.redes-sociales {
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 25px;
+}
+
+/* /////////////////////// TABLET ///////////////////////*/
+@media (max-width: 1023px) {
+    .contenido {
+    flex-direction: column-reverse;
+    margin: auto;
+    }
+}
+
+/* /////////////////////// MOBLILE ///////////////////////*/
+@media (max-width: 767px) {
+    .header,
+    .footer-logo {
+    font-size: 1.5rem;
+    padding: 20px;
+    }
+    .logo__add {
+        display: none;
+    }
+
+    .contenido {
+        margin: 20px;
+        padding: 0;
+        gap: 70px;
+        max-width: 100%;
+    }
+
+    .contenido-titulo {
+        font-size: 1.5rem; 
+    }
+
+    .formulario-boton {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenido-titulo {
+        margin: 10px;
+    }
+
+    .contenido-crear-formulario {
+        gap: 20px;
+    }
+}
+
+/* /////////////////////// MOBLILE - MENOR ///////////////////////*/
+@media (max-width: 400px) {
+    .campo-escrita {
+    width: 100%;
+    height: auto;
+    }
+
+    .contenido-titulo {
+        font-size: 0.75rem; 
+    }
+
+    .logo {
+        display: none;
+}
+}

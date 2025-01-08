@@ -1,0 +1,12 @@
+{
+  "name": "alurageek-alejabeltran",
+  "version": "1.0.0",
+  "description": "plataforma de ventas de productos",
+  "license": "ISC",
+  "author": "Aleja Beltran",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
