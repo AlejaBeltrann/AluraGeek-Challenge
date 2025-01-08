@@ -1,13 +1,13 @@
 // Obtiene la lista de productos
 async function listaProductos() {
-  const conexion = await fetch('http://localhost:3000/productos');
+  const conexion = await fetch('https://my-json-server.typicode.com/AlejaBeltrann/AluraGeek-Challenge/productos');
   const item = await conexion.json();
 
   return item;
 }
 // Obtiene un producto por su id
 async function crearItem(nombre, precio, imagen, id) {
-  const conexion = await fetch('http://localhost:3000/productos', {
+  const conexion = await fetch('https://my-json-server.typicode.com/AlejaBeltrann/AluraGeek-Challenge/productos', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -33,7 +33,7 @@ async function crearItem(nombre, precio, imagen, id) {
 
 async function eliminarItem(IdItems) {
  try {
-    const conexion = await fetch('http://localhost:3000/productos/' + IdItems, {
+    const conexion = await fetch('https://my-json-server.typicode.com/AlejaBeltrann/AluraGeek-Challenge/productos' + IdItems, {
       method: 'DELETE'
     });
     const data = await conexion.json();
@@ -46,7 +46,7 @@ async function eliminarItem(IdItems) {
 }
 
 async function buscarItem(busqueda) {
-  const conexion = await fetch('http://localhost:3000/productos/' + busqueda);
+  const conexion = await fetch('https://my-json-server.typicode.com/AlejaBeltrann/AluraGeek-Challenge/productos' + busqueda);
   const item = await conexion.json();
   return item;    
 }
