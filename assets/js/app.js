@@ -1,19 +1,19 @@
 // Obtiene la lista de productos
 async function listaProductos() {
-  const conexion = await fetch('https://my-json-server.typicode.com/AlejaBeltrann/AluraGeek-Challenge/productos');
+  const conexion = await fetch("https://my-json-server.typicode.com/AlejaBeltrann/AluraGeek-Challenge/productos");
   const item = await conexion.json();
 
   return item;
 }
 // Obtiene un producto por su id
 async function crearItem(nombre, precio, imagen, id) {
-  const conexion = await fetch('https://my-json-server.typicode.com/AlejaBeltrann/AluraGeek-Challenge/productos', {
-    method: 'POST',
+  const conexion = await fetch("https://my-json-server.typicode.com/AlejaBeltrann/AluraGeek-Challenge/productos", {
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json'
+      "Content-Type": "application/json"
     },
     body: JSON.stringify({
-            nombre: nombre,
+      nombre: nombre,
       precio: precio,
       imagen: imagen,
       id: id
@@ -21,34 +21,34 @@ async function crearItem(nombre, precio, imagen, id) {
     // Si la conexión no es exitosa, lanza un error
 
   });
-  
+
   if (!conexion.ok) {
-    throw new Error('No se pudo crear el producto');
-  } 
-  
-  
+    throw new Error("No se pudo crear el producto");
+  }
+
+
   const item = await conexion.json();
   return item;
 }
 
 async function eliminarItem(IdItems) {
- try {
-    const conexion = await fetch('https://my-json-server.typicode.com/AlejaBeltrann/AluraGeek-Challenge/productos' + IdItems, {
-      method: 'DELETE'
+  try {
+    const conexion = await fetch("https://my-json-server.typicode.com/AlejaBeltrann/AluraGeek-Challenge/productos" + IdItems, {
+      method: "DELETE"
     });
     const data = await conexion.json();
     console.log(data);
   }
   catch (error) {
-    console.error('No se pudo eliminar  el producto');
+    console.error("No se pudo eliminar  el producto");
     throw error;
   }
 }
 
 async function buscarItem(busqueda) {
-  const conexion = await fetch('https://my-json-server.typicode.com/AlejaBeltrann/AluraGeek-Challenge/productos' + busqueda);
+  const conexion = await fetch("https://my-json-server.typicode.com/AlejaBeltrann/AluraGeek-Challenge/productos" + busqueda);
   const item = await conexion.json();
-  return item;    
+  return item;
 }
 
 export const app = {
