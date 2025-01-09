@@ -12,7 +12,7 @@ export default function cardsProductos(nombre, precio, imagen, id) {
         <img class="contenido-items-imagen" src="${imagen}" alt="">
         <h3 class="contenido-items-titulo">${nombre}</h3>  
         <div class="contenido-items-valor-eliminar">
-            <h2 class="contenido-items-valor"><strong>${precio}</strong></h2>
+            <h2 class="contenido-items-valor"><strong>$ ${precio}</strong></h2>
             <button id="${id}" data-eliminar>
                 <a><img src="./assets/img/papelera.png" alt="Eliminar producto"></a>
             </button>
