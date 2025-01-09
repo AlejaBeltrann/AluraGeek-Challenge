@@ -1,16 +1,16 @@
 # Alura Geek - Challenge
 
-### 🚀 Sobre el Desafío
+### Sobre el Desafío
 
 AluraGeek es una tienda de productos geeks que cuenta con una página responsiva donde puedes registrar tus productos y ponerlos a la venta.
 
-### 📄 Estructura HTML de la Página
+### Estructura HTML
 
-- **Header** con el logo de AluraGeek.
-- **Sección** con todos los productos.
-- **Cards** de los productos que contienen información como nombre, valor y opción de eliminar ese ítem de la tienda.
-- **Sección de formulario** para registrar un nuevo producto.
-- **Footer** que incluye el logo y más información sobre el desarrollador.
+- Con el logo de AluraGeek.
+- Con todos los productos.
+- Los productos que contienen información como nombre, valor y opción de eliminar ese ítem de la tienda.
+- Sección de formulario para registrar un nuevo producto.
+- Footer que incluye el logo y más información sobre el desarrollador.
 
 ### ⚙️ JavaScript
 
