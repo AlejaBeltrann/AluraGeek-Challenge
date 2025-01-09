@@ -1,33 +1,30 @@
 # Alura Geek - Challenge
 
-### Sobre el Desafío
+### Sobre el Challenge
+AluraGeek es una tienda en línea que vende productos geeks a través de una página web adaptable, donde puedes registrar y poner a la venta tus productos
 
-AluraGeek es una tienda de productos geeks que cuenta con una página responsiva donde puedes registrar tus productos y ponerlos a la venta.
+*Aquí puede visualizar la tienda en linea* 
+https://alura-geek-challenge-wine.vercel.app/
+
+# Codigos Utilizados 
+⭐ JavaScript ⭐ CSS ⭐ HTML
 
 ### Estructura HTML
 
-- Con el logo de AluraGeek.
-- Con todos los productos.
-- Los productos que contienen información como nombre, valor y opción de eliminar ese ítem de la tienda.
-- Sección de formulario para registrar un nuevo producto.
-- Footer que incluye el logo y más información sobre el desarrollador.
+✔️ Muestra todos los productos disponibles en el API.
+✔️ Cada producto incluye nombre, precio, imagen (url) y opción para eliminarlo de la tienda.
+✔️ Sección de formulario para registrar nuevos productos.
+✔️ Incluye el logo de AluraGeek.
+✔️Footer con el logo y más información sobre la desarrolladora.
 
-### ⚙️ JavaScript
+### JavaScript
 
-- API simulada con **json-server**.
-- **Requerimientos GET** para obtener los productos.
-- **Manipulación del DOM** para renderizar la información.
-- **Renderización** de los productos en la interfaz.
-- **Requerimientos POST** para agregar nuevos productos.
-- **Captura de eventos** en el formulario para el registro de productos.
-- **Envío y eliminación** de productos en la tienda.
+✔️ Manipula el DOM para mostrar la información.
+✔️ Realiza peticiones GET para obtener los productos
+✔️ Renderiza los productos en la interfaz.
+✔️ Realiza peticiones POST para añadir nuevos productos en el contenido de productos.
+✔️ Toma eventos en el formulario para registrar productos nuevos.
+✔️ Opciones de Enviar y Cancelar para los productos en la tienda.
+✔️ Utilice json-server para simular una API.
 
-## 🛠️ Tecnologías Utilizadas
-
-- HTML
-- CSS
-- JavaScript
-
----
-
-*Desarrollado por Fabian Soto como parte del programa Oracle ONE.*
+**Desarrollado por Alejandra Beltrán para el programa ONE de Oracle y Alura.**
