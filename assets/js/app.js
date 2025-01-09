@@ -33,7 +33,7 @@ async function crearItem(nombre, precio, imagen, id) {
 
 async function eliminarItem(IdItems) {
   try {
-    const conexion = await fetch("https://my-json-server.typicode.com/AlejaBeltrann/AluraGeek-Challenge/productos" + IdItems, {
+    const conexion = await fetch(`https://my-json-server.typicode.com/AlejaBeltrann/AluraGeek-Challenge/productos/${IdItems}`, {
       method: "DELETE"
     });
     const data = await conexion.json();
@@ -46,7 +46,7 @@ async function eliminarItem(IdItems) {
 }
 
 async function buscarItem(busqueda) {
-  const conexion = await fetch("https://my-json-server.typicode.com/AlejaBeltrann/AluraGeek-Challenge/productos" + busqueda);
+  const conexion = await fetch(`https://my-json-server.typicode.com/AlejaBeltrann/AluraGeek-Challenge/productos?q=${busqueda}`);
   const item = await conexion.json();
   return item;
 }
