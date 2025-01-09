@@ -6,7 +6,7 @@ AluraGeek es una tienda en línea que vende productos geeks a través de una pá
 *Aquí puede visualizar la tienda en linea* 
 https://alura-geek-challenge-wine.vercel.app/
 
-# Codigos Utilizados 
+## Codigos Utilizados
 ⭐ JavaScript ⭐ CSS ⭐ HTML
 
 ### Estructura HTML
