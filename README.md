@@ -1,12 +1,12 @@
 # Alura Geek - Challenge
 
-### Sobre el Challenge
+## Sobre el Challenge
 AluraGeek es una tienda en línea que vende productos geeks a través de una página web adaptable, donde puedes registrar y poner a la venta tus productos
 
 *Aquí puede visualizar la tienda en linea* 
 https://alura-geek-challenge-wine.vercel.app/
 
-## Codigos Utilizados
+### Codigos Utilizados
 ⭐ JavaScript ⭐ CSS ⭐ HTML
 
 ### Estructura HTML
