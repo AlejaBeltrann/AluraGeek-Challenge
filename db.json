@@ -2,25 +2,25 @@
   "productos": [
     {
       "nombre": "Iphone X",
-      "precio": "$120",
+      "precio": "120",
       "imagen": "https://saldos.clevercel.co/cdn/shop/products/iphone-x_fb58626b-938e-4a6a-8a09-5f47367b53c7.png?v=1735942636",
       "id": "1"
     },
     {
       "nombre": "Samsung Galaxy S10",
-      "precio": "$100",
+      "precio": "100",
       "imagen": "https://m.media-amazon.com/images/I/61YVqHdFRxL.jpg",
       "id": "2"
     },
     {
       "nombre": "Nokia 1100",
-      "precio": "$10",
+      "precio": "10",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTatUeVLJNySYLZPx9Bk-bncFpYOGi6ucW1EQ&s",
       "id": "3"
     },
     {
       "nombre": "Apple Watch Serie 4",
-      "precio": "$80",
+      "precio": "80",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY7Qs-yH11m3ECwHSp0iNe39v1GiwoyljqqQ&s",
       "id": "4"
     },
